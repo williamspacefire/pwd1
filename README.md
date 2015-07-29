@@ -1,15 +1,28 @@
-# PWD1 - Classe de salt em PHP
-pwd1 é uma classe php criada para deixar a senha mais segura, usando uma senha criada pelo administrador, assim o salt será diferente para mesma senha para cada um que usar a classe.
+# PWD1 - Classe de Salt em PHP
+PWD1 é uma classe php criada para deixar a senha mais segura, usando uma chave definida por você para gerar as hash, assim a hash da senha gerada será diferente para cada chave definida por você
 
-O nome pwd vem de password e o 1 é porque é a primeira verão.
-<br>
 # Configuração
-Primeiro abra a classe e atribua uma senha com caracteres aleatórios
+Primeiro abra a classe e atribua uma chave digitando caracteres aleatórios, não tem limite de caracteres
 para a constante KEY.
-<br>const KEY = "inclua caracteres aleatórios aqui";
+```php
+const KEY = "inclua caracteres aleatórios aqui";
+```
 
 # Exemplo de Uso
-<?php<br>
-include("pwd1.class.php");<br>
-$senha = pwd1::encrypt(md5("Aqui fica a senha"));<br>
+
+### 1) Exemplo 1
+```php
+include("pwd1.class.php");
+$senha = pwd1::encrypt(md5("Aqui fica a senha"));
+```
+
+### 2) Exemplo 2
+
+Execute o código abaixo para fazer os testes
+```php
+<?php
+include("pwd1.class.php");
+$senha = $_GET["pass"];
+echo pwd1::encrypt(md5($senha));
 ?>
+```
