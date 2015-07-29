@@ -1,4 +1,4 @@
-# PWD1
+# PWD1 - Classe de salt em PHP
 pwd1 é uma classe php criada para deixar a senha mais segura, usando uma senha criada pelo administrador.
 <br>
 # Uso
