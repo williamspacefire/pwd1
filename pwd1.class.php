@@ -1,17 +1,15 @@
 <?php
 /**
-*       		            ------------------- 
-*							| Spacefire, inc. |
-*		----------------------------------------------------------
-*		| Classe simples de Salt para deixar senhas mais seguras |
-*		----------------------------------------------------------
+* © Spacefire, inc.
+*----------------------------------------------------------
+*| Classe simples de Salt para deixar senhas mais seguras |
+*----------------------------------------------------------
 *
 * @copyright	Spacefire, inc.
-* @author 		William Spacefire
+* @author 	William Spacefire
 * @category 	Criptografia
-* @version 		2.4
+* @version	2.4
 */
-
 class pwd1{
 	/**
 	* Constante de caracteres aleatórios para
@@ -21,10 +19,10 @@ class pwd1{
 	* e coloque em KEY, isso será a chave para
 	* criptografar as senhas, quanto maior melhor ;)
 	*/
-	const KEY = "99juf57hhh48866jsasoyeoi9f927e8fus";
+	const KEY = "escolha uma senha e coloque aqui";
 	/**
 	* Executa a Criptografia da senha
-    * passada pelo parametro $pass
+	* passada pelo parametro $pass
 	*
 	* @return string
 	* @param string $pass
