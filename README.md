@@ -1,6 +1,5 @@
 # PWD1 - Classe de Salt em PHP
 PWD1 é uma classe php criada para deixar a senha mais segura, usando uma chave definida por você para gerar as hashs, assim a hash da senha gerada será diferente para cada chave definida por você.
-
 # Configuração
 Primeiro abra a classe e atribua uma chave digitando caracteres aleatórios, não tem limite de caracteres
 para a constante KEY.
