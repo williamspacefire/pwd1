@@ -22,7 +22,7 @@
 * @copyright    Spacefire, inc.
 * @author       William Spacefire
 * @category     Criptografia
-* @version      2.4
+* @version      2.0
 */
 class pwd1{
 	/**
