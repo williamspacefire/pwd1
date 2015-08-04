@@ -72,7 +72,7 @@ class pwd1{
 	* @return array
 	*/
 	private static function StrtoArray($hash){
-		$toArray = array();
+		$toArray = [];
 		for($i=0;$i<strlen($hash);$i++){
 			$toArray[$i] = substr($hash, $i,1);
 		}
@@ -87,7 +87,7 @@ class pwd1{
 	* @return array
 	*/
 	private static function ArraytoOrd($array){
-		$toOrd = array();
+		$toOrd = [];
 		for($i=0;$i<count($array);$i++){
 			$toOrd[$i] = ord($array[$i]);
 		}
