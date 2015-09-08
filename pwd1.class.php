@@ -45,7 +45,7 @@ class pwd1{
 		$x = self::ArraytoOrd(self::StrtoArray(sha1(sha1($pass.sha1(self::KEY)))));
 		$y = self::ArraytoOrd(self::StrtoArray(sha1(sha1(self::KEY).sha1(self::KEY))));
 		$z = "";
-		for($i=0;$i<=40;$i++){
+		for($i=0;$i<=39;$i++){
 			$z .= ($x[$i]*$y[$i]);
 		}
 		$z = md5($z);
