@@ -13,8 +13,10 @@ const KEY = "digite caracteres aleatórios aqui";
 
 Exemplo mostrando como o pwd1 pode ser usado
 ```php
+<?php
 include("pwd1.class.php");
 $senha = pwd1::encrypt(md5("Aqui fica a senha"));
+?>
 ```
 
 ### 2) Exemplo 2
